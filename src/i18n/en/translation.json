@@ -1,3 +1,8 @@
 {
-  "deviceStandard": "Standard"
+  "deviceStandard": "Standard",
+  "rememberPassword": "Forgot password?",
+  "login": "LOGIN",
+  "haveAccount": "If you don't have an account yet?",
+  "register": "Create an account",
+  "installMobileApp": "Install mobile app."
 }

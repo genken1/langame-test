@@ -3,27 +3,34 @@ import { MainPage } from '@/pages/Main';
 import { LoginPage } from '@/pages/Login';
 import { RegisterPage } from '@/pages/Register';
 import { PrivateRoute } from '@/router/PrivateRoute.tsx';
+import { Suspense } from 'react';
 
 export const AppRoutes = () => {
   const router = createBrowserRouter([
     {
       path: '/',
       element: (
-        <PrivateRoute>
-          <MainPage />
-        </PrivateRoute>
+        <Suspense fallback='Loading...'>
+          <PrivateRoute>
+            <MainPage />
+          </PrivateRoute>
+        </Suspense>
       ),
     },
     {
       path: '/login',
       element: (
-        <LoginPage />
+        <Suspense fallback='Loading...'>
+          <LoginPage />
+        </Suspense>
       ),
     },
     {
       path: '/register',
       element: (
-        <RegisterPage />
+        <Suspense fallback='Loading...'>
+          <RegisterPage />
+        </Suspense>
       ),
     }
   ])

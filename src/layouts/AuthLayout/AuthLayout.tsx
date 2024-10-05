@@ -3,7 +3,13 @@ import { ChildrenProp } from '@/types';
 import { CurrentTimeViewer, DeviceNumber, LanguageSelector, } from './ui';
 import cls from './AuthLayout.module.pcss'
 
-export const AuthLayout: FC<ChildrenProp> = ({ children }) => {
+interface AuthLayout extends ChildrenProp {
+  className?: string;
+}
+
+export const AuthLayout: FC<AuthLayout> = (props) => {
+  const { children, className} = props
+
   return (
     <>
       <div className={cls.background} />
@@ -11,7 +17,7 @@ export const AuthLayout: FC<ChildrenProp> = ({ children }) => {
         <div className={cls.item}>
           <DeviceNumber />
         </div>
-        <div className={cls.item}>
+        <div className={className ? className : cls.item}>
           {children}
         </div>
         <div className={cls.item__right}>

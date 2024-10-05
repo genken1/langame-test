@@ -1,3 +1,5 @@
+@import './theme/light/colors.light.pcss';
+
 html,
 body,
 #root {
@@ -5,7 +7,6 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: , sans-serif;
 }
 
 @font-face {
@@ -20,4 +21,18 @@ body,
   font-style: normal;
   font-weight: normal;
   src: local('Nitti Normal'), url('assets/fonts/nitti/Nitti-Normal.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Lato Bold'), url('assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lato Regular'), url('assets/fonts/lato/Lato-Regular.ttf') format('truetype');
 }

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import postcssNested from 'postcss-nested'
+import postcssImport from 'postcss-import'
 import { aliases } from './aliases';
 import * as path from 'path';
 
@@ -12,7 +13,7 @@ export default defineConfig({
   plugins: [react()],
   css: {
     postcss: {
-      plugins: [postcssNested()]
+      plugins: [postcssNested(), postcssImport()]
     }
   },
   server: {

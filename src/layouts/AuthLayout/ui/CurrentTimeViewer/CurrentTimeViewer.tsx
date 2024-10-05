@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { formatTime } from '@/shared';
 import cls from './CurrentTimeViewer.module.pcss'
 
 export const CurrentTimeViewer = () => {
@@ -13,7 +14,7 @@ export const CurrentTimeViewer = () => {
 
   return(
     <div className={cls.timer}>
-      <span>{date.getHours()}</span>:<span>{date.getMinutes()}</span>
+      {formatTime(date)}
     </div>
   )
 };

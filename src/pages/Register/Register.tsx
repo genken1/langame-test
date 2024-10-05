@@ -1,8 +1,10 @@
+import { AuthLayout } from '@/layouts';
+
 const Register = () => {
   return (
-    <div>
+    <AuthLayout>
       RegisterPage
-    </div>
+    </AuthLayout>
   );
 };
 

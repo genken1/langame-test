@@ -2,7 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { AuthProvider } from '@/providers';
 import { AppRoutes } from '@/router/AppRouter.tsx';
-import './index.css'
+import './i18n/i18n.js'
+import './index.pcss'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

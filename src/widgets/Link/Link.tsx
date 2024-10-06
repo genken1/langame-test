@@ -6,13 +6,19 @@ interface LinkProps {
   children: ReactNode;
   to: string;
   className?: string;
+  newTab?: boolean;
+}
+
+const newTabProps = {
+  target: '_blank',
+  rel: 'noopener noreferrer'
 }
 
 export const Link: FC<LinkProps> = (props) => {
-  const { children, to, className = '' } = props;
+  const { children, to, className = '', newTab } = props;
 
   return (
-    <NavLink className={cls.link + ' ' + className} to={to}>
+    <NavLink {...(newTab && to ? newTabProps : {})} className={cls.link + ' ' + className} to={to}>
       {children}
     </NavLink>
   );

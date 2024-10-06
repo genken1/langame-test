@@ -4,5 +4,44 @@
   "login": "ВОЙТИ",
   "haveAccount": "Если у вас еще нет аккаунта?",
   "register": "Зарегистрируйтесь",
-  "installMobileApp": "Установите приложение."
+  "installMobileApp": "Установите приложение.",
+  "link": {
+    "info": "Информация",
+    "vacancies": "Вакансии",
+    "help": "Помощь",
+    "privacy": "Конфиденциальность",
+    "term": "Правила",
+    "faq": "FAQ",
+    "priceList": "Прайс-лист"
+  },
+  "input": {
+    "phone": {
+      "placeholder": "Введите номер телефона",
+      "label": "Номер телефона"
+    },
+    "password": {
+      "placeholder": "Введите пароль",
+      "label": "Пароль"
+    },
+    "repeatPassport": {
+      "placeholder": "Повторите пароль",
+      "label": "Повторите пароль"
+    },
+    "fio": {
+      "placeholder": "ФИО",
+      "label": "Введите ФИО"
+    },
+    "birthday": {
+      "placeholder": "Дата рождения",
+      "label": "Введите дату рождения"
+    },
+    "document": {
+      "placeholder": "Выберите документ",
+      "label": "Документ"
+    },
+    "passport": {
+      "placeholder": "Укажите 10 цифр серия и номер",
+      "label": "Укажите 10 цифр серия и номер"
+    }
+  }
 }

@@ -1,4 +1,4 @@
-.background {
+.authBackground {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -8,9 +8,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    bottom: 0;
-    background-color: var(--interface-bg);
     background-image: url("../../assets/svg/company-logo.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,8 +20,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-color: var(--interface-bg);
     background-image: url("../../assets/svg/company-logo.svg");
     background-repeat: no-repeat;
     background-attachment: local;
@@ -35,9 +30,10 @@
   }
 }
 
-.container {
+.authLayout {
   height: 100%;
   display: grid;
+  grid-template-rows: 1fr 72px;
   grid-template-columns: 2fr 8fr 2fr;
 }
 
@@ -45,15 +41,21 @@
   display: flex;
   justify-content: center;
 
-  &__right {
-    display: flex;
-    align-items: end;
-    margin-bottom: 90px;
+  &Center {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &Center {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
+  &BottomCenter {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &BottomRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: center;
+    justify-self: center;
   }
 }

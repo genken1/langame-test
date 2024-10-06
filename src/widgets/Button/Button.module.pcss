@@ -1,0 +1,30 @@
+.button {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 34px;
+    font-family: "Lato Bold", sans-serif;
+    font-size: 14px;
+    height: 44px;
+    width: 100%;
+
+    &Contained {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: var(--button-text-contained);
+
+        &:hover {
+            background-color: var(--primary-accent);
+        }
+    }
+
+    &Outlined {
+        background-color: var(--button-bg-outlined);
+        border-color: var(--button-border-outlined);
+        color: var(--button-text-outlined);
+
+        &:hover {
+            background-color: var(--button-bg-outlined-accent);
+        }
+    }
+}

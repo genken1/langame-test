@@ -1,15 +1,17 @@
 import { AuthLayout } from '@/layouts';
 import { LoginForm, Logo, Register } from './ui';
-import cls from './Login.module.pcss'
 import { InstallMobilApp } from '@/pages/Login/ui/InstallMobilApp';
+import cls from './Login.module.pcss'
 
 const Login = () => {
   return (
-    <AuthLayout className={cls.loginPage}>
-      <Logo />
-      <LoginForm />
-      <Register />
-      <InstallMobilApp />
+    <AuthLayout>
+      <div className={cls.loginPage}>
+        <Logo />
+        <LoginForm />
+        <Register />
+        <InstallMobilApp />
+      </div>
     </AuthLayout>
   );
 };

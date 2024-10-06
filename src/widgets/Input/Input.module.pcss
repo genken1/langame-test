@@ -1,3 +1,60 @@
 .input {
+    cursor: text;
+    background-color: var(--input-bg);
+    color: var(--input-text-placeholder);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--input-bg);;
+    font-family: "Lato Light", sans-serif;
+    font-size: 15px;
+    height: 82px;
+    padding: 0 24px;
 
+    /* style for unfocused state */
+    display: flex;
+    align-items: center;
+
+    input {
+        all: unset;
+        font-family: "Lato Bold", sans-serif;
+        font-size: 17px;
+        color: var(--input-text-value);
+    }
+
+    &Filled {
+        justify-content: start;
+        align-items: center;
+    }
+
+    &Field {
+        display: flex;
+        margin-top: 6px;
+
+        &Hide {
+            display: none;
+        }
+
+        &Icon {
+            margin-right: 16px;
+        }
+    }
+
+    &Hint {
+        font-family: "Lato Bold", sans-serif;
+        font-size: 9px;
+        color: var(--error);
+        text-transform: uppercase;
+        height: 14px;
+    }
+
+    &Error {
+        border-color: var(--error);
+        outline: var(--error-opacity) solid 4px;
+    }
+
+    &Success {
+        border-color: var(--success);
+        outline: var(--success-opacity) solid 4px;
+    }
 }

@@ -4,5 +4,40 @@
   "login": "LOGIN",
   "haveAccount": "If you don't have an account yet?",
   "register": "Create an account",
-  "installMobileApp": "Install mobile app."
+  "installMobileApp": "Install mobile app.",
+  "link": {
+    "info": "Information",
+    "vacancies": "Vacancies",
+    "help": "Help",
+    "privacy": "Privacy",
+    "term": "Terms of use",
+    "faq": "FAQ",
+    "priceList": "Price list"
+  },
+  "input": {
+    "phone": {
+      "placeholder": "Enter your phone number",
+      "label": "Phone number"
+    },
+    "password": {
+      "placeholder": "Enter your phone password",
+      "label": "Password"
+    },
+    "fio": {
+      "placeholder": "Full name",
+      "label": "Enter your full name"
+    },
+    "birthday": {
+      "placeholder": "Birthday",
+      "label": "Enter your birthday"
+    },
+    "document": {
+      "placeholder": "Choose a document",
+      "label": "Document"
+    },
+    "passport": {
+      "placeholder": "Please enter 10 digits series and number",
+      "label": "Please enter 10 digits series and number"
+    }
+  }
 }
